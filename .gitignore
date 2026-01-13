@@ -1,0 +1,24 @@
+# SUMO (NO versionar)
+sumo/
+build/
+bin/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+sumo-venv/
+
+# Resultados pesados
+results/*
+!results/README.md
+
+# Temporales
+*.log
+*.tmp
+
+# Sistema
+.DS_Store
+Thumbs.db
