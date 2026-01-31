@@ -59,6 +59,9 @@ La simulación se ejecuta en modo batch utilizando SUMO:
 ```bash
 sumo -c simu_p3.sumocfg
 
+
+---
+
 ## Archivos de salida generados
 
 ### tripinfo.xml
@@ -105,3 +108,40 @@ python3 $SUMO_HOME/tools/plot_trajectories.py \
 
 El archivo trayectorias.png permite observar de forma visual
 la dinámica del tráfico sobre la red urbana.
+
+---
+
+## Extraer trayectoria de un solo vehículo desde fcd.xml
+
+Usamos una herramienta de SUMO oficial.
+
+Ejecuta:
+
+python3 $SUMO_HOME/tools/plot_trajectories.py \
+  -t xy \
+  --filter-ids 0 \
+  -o trayectoria_veh_0.png \
+  fcd.xml
+  
+Para dos trayectorias:
+
+python3 $SUMO_HOME/tools/plot_trajectories.py \
+  -t xy \
+  --filter-ids 0,7 \
+  -o trayectorias_veh_0_7.png \
+  fcd.xml
+
+---
+
+## Extraer la velocidad vs tiempo de dos vehiculos
+
+Comparar velocidad de dos vehículos reales
+
+python3 $SUMO_HOME/tools/plot_trajectories.py \
+  -t ts \
+  --filter-ids 0,7 \
+  -o velocidad_vs_tiempo_veh_0_7.png \
+  fcd.xml
+
+  
+  
