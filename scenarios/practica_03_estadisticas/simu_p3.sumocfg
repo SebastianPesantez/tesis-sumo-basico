@@ -2,6 +2,7 @@
     <input>
         <net-file value="red_osm.net.xml"/>
         <route-files value="rutas_osm.rou.xml"/>
+        <additional-files value="input-additional-edgeData.xml"/>
     </input>
 
     <time>
