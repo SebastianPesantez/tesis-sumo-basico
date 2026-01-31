@@ -1,0 +1,17 @@
+<configuration>
+    <input>
+        <net-file value="red_osm.net.xml"/>
+        <route-files value="rutas_osm.rou.xml"/>
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="600"/>
+    </time>
+
+    <output>
+        <tripinfo-output value="tripinfo.xml"/>
+        <fcd-output value="fcd.xml"/>
+        <amitran-output value="trajectories.xml"/>
+    </output>
+</configuration>
