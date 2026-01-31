@@ -13,5 +13,6 @@
         <tripinfo-output value="tripinfo.xml"/>
         <fcd-output value="fcd.xml"/>
         <amitran-output value="trajectories.xml"/>
+        <edgedata-output value="edgedata.xml"/>
     </output>
 </configuration>
